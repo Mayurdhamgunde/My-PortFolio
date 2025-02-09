@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
-import Experience from './components/Experience';
+// import Experience from './components/Experience';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ function App() {
       <main className="pt-16">
         <Hero />
         <About />
-        <Experience />
+        {/* <Experience /> */}
         <Skills />
         <Projects />
         <Achievements />
