@@ -22,6 +22,25 @@ function App() {
         <Projects />
         <Achievements />
         <Contact />
+        {/* Footer Component */}
+        <footer className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 py-6 px-8 flex justify-center items-center shadow-md">
+          <div className="text-center">
+            <p className="text-sm md:text-base font-semibold tracking-wide glow-effect">
+              &copy; {new Date().getFullYear()} Made with ❤️ by Mayur . All rights reserved.
+            </p>
+          </div>
+        </footer>
+      
+      <style>{`
+        .glow-effect {
+          text-shadow: 0 0 8px rgba(0, 255, 255, 0.7), 0 0 16px rgba(0, 255, 255, 0.5);
+          transition: text-shadow 0.3s ease;
+        }
+        footer:hover .glow-effect {
+          text-shadow: 0 0 16px rgba(0, 255, 255, 0.9), 0 0 32px rgba(0, 255, 255, 0.7);
+        }
+      `}</style>
+        
       </main>
     </div>
   );
