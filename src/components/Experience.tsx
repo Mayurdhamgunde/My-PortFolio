@@ -7,13 +7,7 @@ const experiences = [
     role: "Software Development Intern",
     company: "Gemburg",
     period: "February 2025 - Present",
-    description: `
- Working on full-stack development using modern technologies and cloud solutions.
- Building and optimizing full-stack React Native applications.
- Specializing in building scalable applications and implementing cloud-based architectures.
- Configuring and managing Microsoft Azure services for cloud-based deployment.
- Collaborating with cross-functional teams to integrate modern technologies development workflows.
-`,
+    description: "Developing and maintaining full-stack applications using React Native, focusing on improving app performance and scalability. Configuring and managing Microsoft Azure services for cloud-based deployment. Collaborating with cross-functional teams to integrate modern technologies and streamline development workflows.",
     technologies: ["React Native", "Microsoft Azure", "TypeScript", "Node.js"],
   },
 ];
@@ -55,7 +49,7 @@ export default function Experience() {
                       </div>
                       <div className="flex items-center gap-2">
                         <span className="text-lg font-semibold text-gray-700 dark:text-gray-300">
-                          {exp.company}
+                          <a href="https://www.gemburg.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">{exp.company}</a>
                         </span>
                         <ArrowUpRight className="w-4 h-4 text-gray-400" />
                       </div>
@@ -68,11 +62,9 @@ export default function Experience() {
                     </div>
                   </div>
 
-                  <ul className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 list-disc list-inside">
-                    {exp.description.split('\n').filter(Boolean).map((point, idx) => (
-                      <li key={idx}>{point.trim()}</li>
-                    ))}
-                  </ul>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                    {exp.description}
+                  </p>
 
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
                     Technologies & Tools
