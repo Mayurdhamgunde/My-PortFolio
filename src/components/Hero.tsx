@@ -284,7 +284,7 @@ export default function Hero() {
             <motion.img
               whileHover={{
                 scale: 1.05,
-                rotate: 3,
+                rotate: 1,
                 boxShadow: '0px 0px 25px rgba(0, 255, 255, 0.8)',
               }}
               src="https://github.com/Mayurdhamgunde/Mayurdhamgunde/blob/main/profile-pic%20(7).png?raw=true"
