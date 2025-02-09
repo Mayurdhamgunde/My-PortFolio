@@ -1,124 +1,7 @@
-
-// // import React from 'react';
-// // import { Briefcase, Calendar, ArrowUpRight } from 'lucide-react';
-// // import { motion } from 'framer-motion';
-
-// // const experiences = [
-// //     {
-// //       role: "Software Development Intern",
-// //       company: "Gemburg",
-// //       period: "February 2025 - Present",
-// //       description: "Working on full-stack development using modern technologies and cloud solutions. Building and optimizing full-stack React Native applications. Specializing in building scalable applications and implementing cloud-based architectures. Configuring and managing Microsoft Azure services for cloud-based deployment. Collaborating with cross-functional teams to integrate modern technologies development workflows.",
-// //       technologies: ["React Native", "Microsoft Azure", "TypeScript", "Node.js"],
-// //     },
-// //   ];
-
-// // export default function Experience() {
-// //   return (
-// //     <section id="experience" className="py-6 sm:py-12 px-2 sm:px-4 bg-gray-50 dark:bg-gray-900">
-// //       <div className="container mx-auto max-w-screen-lg">
-// //         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10 text-gray-900 dark:text-white">
-// //           Experience
-// //         </h2>
-        
-// //         <div className="relative mx-auto">
-// //           {/* Timeline Vertical Line with glow */}
-// //           <div className="absolute left-3 sm:left-8 w-0.5 bg-blue-500 dark:bg-blue-400 h-full"></div>
-          
-// //           {experiences.map((exp, index) => (
-// //             <motion.div
-// //               key={index}
-// //               initial={{ opacity: 0, y: 50 }}
-// //               animate={{ opacity: 1, y: 0 }}
-// //               transition={{ duration: 0.6, delay: index * 0.3 }}
-// //               className="relative mb-6 sm:mb-12 flex flex-col items-start group"
-// //             >
-// //               {/* Timeline Dot */}
-// //               <div className="absolute left-2 sm:left-7 w-6 sm:w-8 h-6 sm:h-8 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center z-10">
-// //                 <Briefcase className="text-white w-3 h-3 sm:w-4 sm:h-4" />
-// //               </div>
-              
-// //               {/* Experience Card */}
-// //               <div className="ml-12 sm:ml-20 p-3 sm:p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md w-[calc(100%-3rem)] sm:w-[calc(100%-5rem)]">
-// //                 <div>
-// //                   {/* Header Section */}
-// //                   <div className="flex flex-col gap-2 mb-3">
-// //                     {/* Role and Company */}
-// //                     <div>
-// //                       <h3 className="text-lg sm:text-xl font-bold text-blue-600 dark:text-blue-400">
-// //                         {exp.role}
-// //                       </h3>
-// //                       <div className="flex items-center gap-1 mt-1">
-// //                         <span className="text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300">
-// //                           {exp.company}
-// //                         </span>
-// //                         <ArrowUpRight className="w-3 h-3 text-gray-400" />
-// //                       </div>
-// //                     </div>
-                    
-// //                     {/* Period */}
-// //                     <div className="inline-flex items-center px-2 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md w-fit">
-// //                       <Calendar className="w-3 h-3 sm:w-4 sm:h-4 mr-1.5 text-blue-600 dark:text-blue-400" />
-// //                       <span className="text-xs sm:text-sm font-medium text-blue-600 dark:text-blue-400">
-// //                         {exp.period}
-// //                       </span>
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Description */}
-// //                   <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-3">
-// //                     {exp.description}
-// //                   </p>
-
-// //                   {/* Technologies */}
-// //                   <div>
-// //                     <h4 className="text-sm sm:text-base font-semibold text-gray-900 dark:text-white mb-2">
-// //                       Technologies & Tools
-// //                     </h4>
-// //                     <div className="flex flex-wrap gap-1.5">
-// //                       {exp.technologies.map((tech) => (
-// //                         <span
-// //                           key={tech}
-// //                           className="px-2 py-1 text-xs rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600"
-// //                         >
-// //                           {tech}
-// //                         </span>
-// //                       ))}
-// //                     </div>
-// //                   </div>
-// //                 </div>
-// //               </div>
-// //             </motion.div>
-// //           ))}
-// //         </div>
-// //       </div>
-// //     </section>
-// //   );
-// // }
-
-
-
-
-
-// // -----------------------------------------------with framer motion
-
 // import React from 'react';
 // import { Briefcase, Calendar, ArrowUpRight } from 'lucide-react';
 // import { motion } from 'framer-motion';
 
-// // const experiences = [
-// //     {
-// //       role: "Software Development Intern",
-// //       company: "Gemburg",
-// //       period: "February 2025 - Present",
-// //       description: `- Working on full-stack development using modern technologies and cloud solutions.
-// //         Building and optimizing full-stack React Native applications.
-// //         Specializing in building scalable applications and implementing cloud-based architectures. 
-// //         Configuring and managing Microsoft Azure services for cloud-based deployment. 
-// //         Collaborating with cross-functional teams to integrate modern technologies development workflows.`,
-// //       technologies: ["React Native", "Microsoft Azure", "TypeScript", "Node.js"],
-// //     },
-// //   ];
 // const experiences = [
 //     {
 //       role: "Software Development Intern",
@@ -162,6 +45,18 @@
 //       duration: 0.3,
 //       type: "spring",
 //       stiffness: 150
+//     }
+//   })
+// };
+
+// const bulletVariants = {
+//   hidden: { opacity: 0, x: -20 },
+//   visible: i => ({
+//     opacity: 1,
+//     x: 0,
+//     transition: {
+//       delay: i * 0.1,
+//       duration: 0.3,
 //     }
 //   })
 // };
@@ -249,15 +144,20 @@
 //                     </motion.div>
 //                   </motion.div>
 
-//                   {/* Description */}
-//                   <motion.p 
-//                     initial={{ opacity: 0, y: 20 }}
-//                     animate={{ opacity: 1, y: 0 }}
-//                     transition={{ delay: 0.4 }}
-//                     className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-3"
-//                   >
-//                     {exp.description}
-//                   </motion.p>
+//                   {/* Description Bullets */}
+//                   <ul className="space-y-2 mb-3">
+//                     {exp.description.map((bullet, i) => (
+//                       <motion.li
+//                         key={i}
+//                         custom={i}
+//                         variants={bulletVariants}
+//                         className="flex items-start gap-2"
+//                       >
+//                         <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-blue-500"></span>
+//                         <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-300">{bullet}</span>
+//                       </motion.li>
+//                     ))}
+//                   </ul>
 
 //                   {/* Technologies */}
 //                   <div>
@@ -300,29 +200,25 @@
 
 
 
-
-
-
-
 import React from 'react';
 import { Briefcase, Calendar, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const experiences = [
-    {
-      role: "Software Development Intern",
-      company: "Gemburg",
-      period: "February 2025 - Present",
-      description: [
-        "Working on full-stack development using modern technologies and cloud solutions",
-        "Building and optimizing full-stack React Native applications",
-        "Specializing in building scalable applications and implementing cloud-based architectures",
-        "Configuring and managing Microsoft Azure services for cloud-based deployment",
-        "Collaborating with cross-functional teams to integrate modern technologies development workflows"
-      ],
-      technologies: ["React Native", "Microsoft Azure", "TypeScript", "Node.js"],
-    },
-  ];
+  {
+    role: "Software Development Intern",
+    company: "Gemburg",
+    period: "February 2025 - Present",
+    description: [
+      "Working on full-stack development using modern technologies and cloud solutions",
+      "Building and optimizing full-stack React Native applications",
+      "Specializing in building scalable applications and implementing cloud-based architectures",
+      "Configuring and managing Microsoft Azure services for cloud-based deployment",
+      "Collaborating with cross-functional teams to integrate modern technologies development workflows"
+    ],
+    technologies: ["React Native", "Microsoft Azure", "TypeScript", "Node.js"],
+  },
+];
 
 const cardVariants = {
   hidden: { 
@@ -430,9 +326,14 @@ export default function Experience() {
                         {exp.role}
                       </h3>
                       <div className="flex items-center gap-1 mt-1">
-                        <span className="text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300">
+                        <a 
+                          href="https://gemburg.com" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                        >
                           {exp.company}
-                        </span>
+                        </a>
                         <ArrowUpRight className="w-3 h-3 text-gray-400" />
                       </div>
                     </div>
