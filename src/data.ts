@@ -6,15 +6,15 @@ export const projects: Project[] = [
     description: 'A decentralized NFT marketplace built on the Internet Computer blockchain with DHAM token integration.',
     techStack: ['React.js', 'Tailwind CSS', 'Motoko', 'Blockchain'],
     image: 'https://raw.githubusercontent.com/Mayurdhamgunde/OpenD--MarketPace/refs/heads/master/Screenshot%202025-02-09%20150911.png',
-    demoLink: '#',
-    githubLink: '#'
+    demoLink: 'https://www.linkedin.com/posts/mayur-dhamgunde-94b9ab226_hello-web3-blockchain-activity-7189390218611871745-Iclo?utm_source=share&utm_medium=member_desktop',
+    githubLink: 'https://github.com/Mayurdhamgunde/OpenD--MarketPace'
   },
   {
     title: 'WORKS',
     description: 'A collection of diverse projects showcasing web development skills and creative implementations.',
     techStack: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js'],
     image: 'https://raw.githubusercontent.com/Mayurdhamgunde/WORKS/master/Works-project-snaps/photo-3.png',
-    demoLink: '#',
+    demoLink: 'https://works-mayur-webapp.vercel.app/',
     githubLink: 'https://github.com/Mayurdhamgunde/WORKS'
   },
   {
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     description: 'A modern e-commerce platform for premium footwear with an intuitive shopping experience.',
     techStack: ['React.js', 'CSS', 'JavaScript', 'Responsive Design'],
     image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1000',
-    demoLink: '#',
+    demoLink: 'https://mayur-shoes.vercel.app/',
     githubLink: 'https://github.com/Mayurdhamgunde/shoes-mayurpage'
   },
   {
@@ -30,16 +30,16 @@ export const projects: Project[] = [
     description: 'A machine learning model predicting concrete compressive strength to optimize mix design.',
     techStack: ['Python', 'Flask', 'NumPy', 'Pandas', 'Scikit-Learn'],
     image: 'https://media.licdn.com/dms/image/v2/D4D2DAQFP05C2yxzqvA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1714860600770?e=1739700000&v=beta&t=zz8tL7MuYqxA9kcm1aFxKQE-pydNsJ08e68erMwmRO0',
-    demoLink: '#',
-    githubLink: '#'
+    demoLink: 'https://www.linkedin.com/posts/mayur-dhamgunde-94b9ab226_machinelearning-construction-concretestrength-activity-7192644641891008512-J14b?utm_source=share&utm_medium=member_desktop',
+    githubLink: 'https://github.com/Mayurdhamgunde/ConcrefyAI'
   },
   {
     title: 'GYMOTION',
     description: 'A responsive gym landing page with smooth animations for an engaging user experience.',
     techStack: ['React.js', 'TypeScript', 'SCSS', 'Framer Motion'],
     image: 'https://raw.githubusercontent.com/Mayurdhamgunde/GYMotion/master/GYM-Site-IMAGES/image-1.png',
-    demoLink: '#',
-    githubLink: '#'
+    demoLink: 'https://mayur-gymotion-site.vercel.app/',
+    githubLink: 'https://github.com/Mayurdhamgunde/mayur-gymotion-site'
   }
 ];
 
@@ -81,7 +81,7 @@ export const achievements: Achievement[] = [
   },
   {
     title: 'LinkedIn Top Frontend Coding Voice',
-    description: '5k+ followers'
+    description: '6k+ followers'
   },
   {
     title: 'LeetCode Achievement',
