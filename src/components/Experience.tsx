@@ -3,14 +3,20 @@ import { Briefcase, Calendar, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const experiences = [
-  {
-    role: "Software Development Intern",
-    company: "Gemburg",
-    period: "February 2025 - Present",
-    description: "Developing and maintaining full-stack applications using React Native, focusing on improving app performance and scalability. Configuring and managing Microsoft Azure services for cloud-based deployment. Collaborating with cross-functional teams to integrate modern technologies and streamline development workflows.",
-    technologies: ["React Native", "Microsoft Azure", "TypeScript", "Node.js"],
-  },
-];
+    {
+      role: "Software Development Intern",
+      company: "Gemburg",
+      period: "February 2025 - Present",
+      description: `
+   Working on full-stack development using modern technologies and cloud solutions.
+   Building and optimizing full-stack React Native applications.
+   Specializing in building scalable applications and implementing cloud-based architectures.
+   Configuring and managing Microsoft Azure services for cloud-based deployment.
+   Collaborating with cross-functional teams to integrate modern technologies development workflows.
+  `,
+      technologies: ["React Native", "Microsoft Azure", "TypeScript", "Node.js"],
+    },
+  ];
 
 export default function Experience() {
   return (
