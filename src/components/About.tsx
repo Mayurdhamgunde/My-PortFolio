@@ -138,15 +138,22 @@
 
 import React from 'react';
 import { GraduationCap, Award, Users } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
 
 export default function About() {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({ opacity: 1, y: 0 });
+  }, [controls]);
+
   return (
     <motion.section
       id="about"
       className="py-20 bg-gray-50 dark:bg-gray-800/50"
       initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
+      animate={controls}
       transition={{ duration: 0.8 }}
     >
       <div className="container mx-auto px-6">
@@ -278,3 +285,4 @@ export default function About() {
     </motion.section>
   );
 }
+
