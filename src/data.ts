@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     title: 'WORKS',
     description: 'A collection of diverse projects showcasing web development skills and creative implementations.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js'],
+    techStack: ['HTML', 'CSS', 'JavaScript', 'GSAP', 'Locomotive-scroll'],
     image: 'https://raw.githubusercontent.com/Mayurdhamgunde/WORKS/master/Works-project-snaps/photo-3.png',
     demoLink: 'https://works-mayur-webapp.vercel.app/',
     githubLink: 'https://github.com/Mayurdhamgunde/WORKS'
