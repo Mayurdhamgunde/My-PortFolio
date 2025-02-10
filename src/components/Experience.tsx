@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    role: "Software Development Intern",
+    role: "Software Developer Intern",
     company: "Gemburg",
     period: "February 2025 - Present",
     description: [
