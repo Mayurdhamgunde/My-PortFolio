@@ -155,10 +155,19 @@
 //   );
 // }
 
+
+
+
+
 import React from 'react';
 import { GraduationCap, Award, Users } from 'lucide-react';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+};
 
 export default function About() {
   const controls = useAnimation();
@@ -178,10 +187,7 @@ export default function About() {
       <div className="container mx-auto px-6">
         <motion.h2
           className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white"
-          whileHover={{
-            textShadow: '0px 0px 10px rgba(0, 255, 255, 0.8)',
-            scale: 1.1,
-          }}
+          whileHover={{ textShadow: '0px 0px 10px rgba(0, 255, 255, 0.8)', scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
           About Me
@@ -203,9 +209,10 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <motion.div
               className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
               whileHover={{ boxShadow: '0px 0px 20px rgba(0, 255, 255, 0.6)', scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -231,9 +238,10 @@ export default function About() {
 
             <motion.div
               className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
-              initial={{ x: 50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
               whileHover={{ boxShadow: '0px 0px 20px rgba(0, 255, 255, 0.6)', scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -252,17 +260,15 @@ export default function About() {
 
           <motion.div
             className="grid gap-8 mb-8"
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             whileTap={{ scale: 0.95 }}
           >
             <motion.div
               className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-              whileHover={{ boxShadow: '0px 0px 20px rgba(0, 255, 255, 0.6)', scale: 1.05 }}
+              whileHover={{ boxShadow: '0px 0px 15px rgba(0, 255, 255, 0.8)', scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <div className="flex items-center mb-4">
@@ -282,15 +288,16 @@ export default function About() {
 
           <motion.div
             className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
-            initial={{ y: -30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             whileHover={{ boxShadow: '0px 0px 20px rgba(0, 255, 255, 0.6)', scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Key Strengths</h3>
             <ul className="grid md:grid-cols-2 gap-4 text-gray-600 dark:text-gray-300">
-              {["Problem-solving", "Leadership", "Teamwork", "Continuous Learning"].map((strength) => (
+              {['Problem-solving', 'Leadership', 'Teamwork', 'Continuous Learning'].map((strength) => (
                 <motion.li
                   key={strength}
                   className="flex items-center"
