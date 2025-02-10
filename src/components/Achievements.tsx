@@ -157,7 +157,7 @@ export default function Achievements() {
           {achievements.map((achievement, index) => (
             <motion.div
               key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all"
+              className=" dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all"
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
