@@ -45,7 +45,7 @@ export default function Hero() {
                   backgroundColor: '#2563eb',
                 }}
                 variants={itemVariants}
-                href="https://drive.google.com/file/d/1XVJT-hBB6TVGUemGFR-7HB4KmwjQnuJp/view"
+                href="https://drive.google.com/file/d/1lh4Ma6FB7NsqnNwkRDyw3hKndgQO4uff/view?usp=drive_link"
                 className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg transition-colors"
               >
                 <FileText className="mr-2" size={20} />
